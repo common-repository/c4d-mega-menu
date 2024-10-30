@@ -1,0 +1,115 @@
+.c4d-mega-menu-button {
+	background: #cfcfcf;
+    border-radius: 30px;
+    height: 20px;
+    width: 45px;
+    display: inline-block;
+    top: 0;
+    left: 100%;
+    vertical-align: middle;
+    margin: 0 10px;
+    cursor: pointer;
+    &:after {
+    	width: 12px;
+	    height: 12px;
+	    border-radius: 50%;
+	    background: red;
+	    content: '';
+	    display: block;
+	    -webkit-transition: all 0.3s;
+	    transition: all 0.3s;
+	    margin: 4px 5px;
+    }
+    &.active {
+    	&:after {
+    		background: green;
+    		margin-left: 27px;
+    	}
+    }
+}
+
+.c4d-mega-menu-button-col {
+	background: #cfcfcf;
+    border-radius: 30px;
+    height: 20px;
+    width: 91px;
+    display: inline-block;
+    top: 0;
+    left: 100%;
+    vertical-align: middle;
+    margin: 0 5px;
+    cursor: pointer;
+    text-align: center;
+    &:after {
+    	content: '';
+    	display: block;
+    	clear: both;
+    }
+    .next,
+    .prev {
+		width: 12px;
+		height: 12px;
+    	background: #000;
+    	color: #fff;
+    	text-align: center;
+    	line-height: 11px;
+    	display: inline-block;
+    	border-radius: 50%;
+    	margin: 4px 6px;
+    	&:hover {
+    		background: red;
+    	}
+    }
+    .prev {
+    	float: left;
+    	margin-right: 10px;
+    }
+    .next {
+    	float: right;
+    	margin-left: 10px;
+    }
+}
+.c4d-mega-menu-button-setting {
+    background: #cfcfcf;
+    border-radius: 30px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    top: 0;
+    left: 100%;
+    vertical-align: middle;
+    margin: 0 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    i {
+        &:before {
+            font-family: dashicons;
+            content: "\f111";
+            font-size: 10px;
+            margin-right: 2px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+}
+.c4d-mega-menu-setting-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(#000, 0.8);
+    z-index: 9999;
+    display: none;
+    &.active {
+        display: block;
+    }
+    .main-content {
+        max-width: 1024px;
+        min-height: 400px;
+        width: 100%;
+        margin: 5% auto auto;
+        background: #fff;
+    }
+}
